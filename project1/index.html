@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vacation package</title>
+
+  </head>
+  
+
+  <body style="margin: 0">
+    <form onsubmit="handleFormSubmit(event)">
+      <label for="expenseAmount">Choose Expense Amount</label>
+      <input type="text" name="expenseAmount" id="expenseAmount" placeholder="Enter price" />
+      <label for="description">Choose Description</label>
+      <input type="text" name="description" id="description" placeholder="Enter Description"/>
+      <label for="category">Choose a Category</label>
+      <select id="category">
+        <option value="Movie">Movie</option>
+        <option value="Fuel">Fuel</option>
+        <option value="Food">Food</option>
+        <option value="Electricity">Electricity</option>
+      </select>
+      <button type="submit">Add Expense</button>
+    </form>
+    <ul id="userDetails"></ul>
+    <script src="index.js"></script>
+  </body>
+</html>
