@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Manager</title>
+<link rel="stylesheet" href="index.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>NoteBook</h1>
+    <div>
+        <div>
+            <label for="search">Search Title:</label>
+            <input type="text" id="search" placeholder="Enter title to search">
+          </div>
+      <label for="title">Title:</label>
+      <input type="text" id="title" placeholder="Enter title">
+    </div>
+    <div>
+      <label for="description">Description:</label>
+      <input type="text" id="description" placeholder="Enter description">
+    </div>
+    <button id="addBook">Add To Book</button>
+    
+    <p id="searchCount"></p>
+    <p id="totalCount"></p>
+    <ul id="bookList"></ul>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
